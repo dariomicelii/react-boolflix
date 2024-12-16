@@ -23,9 +23,8 @@ function App() {
     fetch(url, options)
       .then((res) => res.json())
       .then((json) => {
-        {
-          setMovieList(json);
-        }
+        setMovieList(json);
+
         console.log(json);
       })
       .catch((err) => console.error(err));
